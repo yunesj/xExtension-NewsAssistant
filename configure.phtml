@@ -40,8 +40,8 @@
 	<div class="form-group">
 		<label class="group-name" for="max_tokens"><a href="https://platform.openai.com/docs/api-reference/chat/create#chat/create-max_tokens" target="_blank"><?php echo _t('ext.field.max_tokens') . " (?)"; ?></a></label>
 		<div class="group-controls">
-			<input type="range" name="max_tokens" id="max_tokens" min="7" max="4096" value="<?php echo FreshRSS_Context::$system_conf->max_tokens ?? 2048; ?>">
-			<output for="max_tokens"><?php echo FreshRSS_Context::$system_conf->max_tokens ?? 2048; ?></output>
+			<input type="range" name="max_tokens" id="max_tokens" min="7" max="16384" value="<?php echo FreshRSS_Context::$system_conf->max_tokens ?? 4096; ?>">
+			<output for="max_tokens"><?php echo FreshRSS_Context::$system_conf->max_tokens ?? 4096; ?></output>
 		</div>
 	</div>
 	<div class="form-group">
